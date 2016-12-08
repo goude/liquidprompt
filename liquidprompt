@@ -286,6 +286,30 @@ _lp_source_config()
     # NO_COL is special: it will be used at runtime, not just during config loading
     NO_COL="${_LP_OPEN_ESC}${ti_sgr0}${_LP_CLOSE_ESC}"
 
+    # Experimental base16 colors
+    local COLOR00="${_LP_OPEN_ESC}$(ti_setaf 0)${_LP_CLOSE_ESC}"
+    local COLOR01="${_LP_OPEN_ESC}$(ti_setaf 1)${_LP_CLOSE_ESC}"
+    local COLOR02="${_LP_OPEN_ESC}$(ti_setaf 2)${_LP_CLOSE_ESC}"
+    local COLOR03="${_LP_OPEN_ESC}$(ti_setaf 3)${_LP_CLOSE_ESC}"
+    local COLOR04="${_LP_OPEN_ESC}$(ti_setaf 4)${_LP_CLOSE_ESC}"
+    local COLOR05="${_LP_OPEN_ESC}$(ti_setaf 5)${_LP_CLOSE_ESC}"
+    local COLOR06="${_LP_OPEN_ESC}$(ti_setaf 6)${_LP_CLOSE_ESC}"
+    local COLOR07="${_LP_OPEN_ESC}$(ti_setaf 7)${_LP_CLOSE_ESC}"
+    local COLOR08="${_LP_OPEN_ESC}$(ti_setaf 8)${_LP_CLOSE_ESC}"
+    local COLOR09="${_LP_OPEN_ESC}$(ti_setaf 9)${_LP_CLOSE_ESC}"
+    local COLOR10="${_LP_OPEN_ESC}$(ti_setaf 10)${_LP_CLOSE_ESC}"
+    local COLOR11="${_LP_OPEN_ESC}$(ti_setaf 11)${_LP_CLOSE_ESC}"
+    local COLOR12="${_LP_OPEN_ESC}$(ti_setaf 12)${_LP_CLOSE_ESC}"
+    local COLOR13="${_LP_OPEN_ESC}$(ti_setaf 13)${_LP_CLOSE_ESC}"
+    local COLOR14="${_LP_OPEN_ESC}$(ti_setaf 14)${_LP_CLOSE_ESC}"
+    local COLOR15="${_LP_OPEN_ESC}$(ti_setaf 15)${_LP_CLOSE_ESC}"
+    local COLOR16="${_LP_OPEN_ESC}$(ti_setaf 16)${_LP_CLOSE_ESC}"
+    local COLOR17="${_LP_OPEN_ESC}$(ti_setaf 17)${_LP_CLOSE_ESC}"
+    local COLOR18="${_LP_OPEN_ESC}$(ti_setaf 18)${_LP_CLOSE_ESC}"
+    local COLOR19="${_LP_OPEN_ESC}$(ti_setaf 19)${_LP_CLOSE_ESC}"
+    local COLOR20="${_LP_OPEN_ESC}$(ti_setaf 20)${_LP_CLOSE_ESC}"
+    local COLOR21="${_LP_OPEN_ESC}$(ti_setaf 21)${_LP_CLOSE_ESC}"
+
     # compute the hash of the hostname
     # and get the corresponding number in [1-6] (red,green,yellow,blue,purple or cyan)
     # FIXME Add more formats (bold? 256 colors?)
